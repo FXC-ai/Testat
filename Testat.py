@@ -28,4 +28,8 @@ p_T_M = pop_MT / (pop_MT + pop_ST)
 p_Tn_S = pop_STn / (pop_STn + pop_MTn)
 
 
-arr_population = np.array([[pop_MT, pop_MTn],[pop_ST, pop_STn], [p_T_M, p_Tn_S]])
+arr_population = np.array([[pop_MT, pop_MTn, pop_M],
+                           [pop_ST, pop_STn, pop_S], 
+                           [p_T_M, p_Tn_S, population]])
+
+
